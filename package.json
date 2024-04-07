@@ -1,0 +1,40 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx sequelize-cli db:migrate && next start",
+    "lint": "next lint",
+    "model:generate": "npx sequelize-cli model:generate",
+    "seed:generate": "npx sequelize-cli seed:generate",
+    "seed:up": "npx sequelize-cli db:seed:all",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "migrate:generate": "npx sequelize-cli migration:generate"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.11",
+    "@fullcalendar/daygrid": "^6.1.11",
+    "@fullcalendar/react": "^6.1.11",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.8.0",
+    "mysql2": "^3.9.3",
+    "next": "14.1.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sequelize": "^6.37.2",
+    "sequelize-cli": "^6.6.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
